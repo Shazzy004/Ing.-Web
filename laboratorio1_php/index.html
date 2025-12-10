@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Laboratorio #1 - PHP</title>
+    <!-- Link to your new stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Laboratorio #1: Cálculos con PHP</h1>
+
+      <!-- Formulario para el Área y Perímetro de un Círculo -->
+      <h2>1. Área y Perímetro de un Círculo</h2>
+      <form action="calcular.php" method="post">
+        <label for="radio"
+          >Ingrese el radio de la circunferencia (dato real):</label
+        >
+        <input type="text" id="radio" name="radio" required />
+        <input type="submit" name="submit_circulo" value="Calcular Círculo" />
+      </form>
+
+      <!-- Formulario para convertir Pulgadas a Centímetros -->
+      <h2>2. Convertir Pulgadas a Centímetros</h2>
+      <form action="calcular.php" method="post">
+        <label for="pulgadas">Ingrese el valor en pulgadas:</label>
+        <input type="text" id="pulgadas" name="pulgadas" required />
+        <input
+          type="submit"
+          name="submit_pulgadas"
+          value="Convertir a Centímetros"
+        />
+      </form>
+    </div>
+  </body>
+</html>

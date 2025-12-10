@@ -1,0 +1,104 @@
+/* General Body Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7f6; /* Light gray background */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Centered Container for all content */
+.container {
+    max-width: 350px; /* Slightly wider to accommodate padding comfortably */
+    margin: 40px auto; /* Centers the container box on the page */
+    padding: 30px;
+    background-color: #9ab3cc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+    /* --- FLEXBOX CENTERING --- */
+    display: flex;            /* 1. Turns on flexbox */
+    flex-direction: column;   /* 2. Stacks items vertically */
+    align-items: center;      /* 3. Centers items horizontally */
+}
+
+/* Heading Styles */
+h1 {
+    color: #04305f;
+    text-align: center;
+}
+
+h2 {
+    color: #04305f;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    text-align: center; /* Center the h2 text as well */
+}
+
+/* Form and Input Styles */
+form {
+    margin-top: 20px;
+    width: 100%; /* Make form take full width of flex container */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: left; /* Keep labels left-aligned for readability */
+}
+
+input[type="text"],
+input[type="submit"] {
+    width: 100%; /* Make inputs fill the width of the form */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* IMPORTANT: Prevents padding from breaking the layout */
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    background-color: #04305f;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #01274f;
+}
+
+/* Specific Styles for the Result Page (calcular.php) */
+.resultado {
+    width: 100%; /* Make the result box fill the width */
+    background-color: #e9f7ef;
+    border-left: 5px solid #0b7d26;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    box-sizing: border-box;
+}
+
+/* Styles for the "Go Back" Link */
+.volver-link {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    text-decoration: none;
+    background-color: #6c757d;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Make the link fill the width */
+    box-sizing: border-box;
+}
+
+.volver-link:hover {
+    background-color: #5a6268;
+}
